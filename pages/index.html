@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPortfolio - Oliver Inzunza Valle</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor"></div>
+
+    <div class="particles"></div>
+
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">WebPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-photo">
+                <img src="../imgs/OliverPhoto.png" alt="Tu Nombre">
+            </div>
+            <div class="hero-text">
+                <h1>Oliver Inzunza Valle</h1>
+                <p class="subtitle">Software Engineer && Backend Developer</p>
+                <a href="#projects" class="cta-button">My Projects</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proyectos -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-project="1">
+                <div class="project-image">
+                    <img src="../imgs/OliFinanceSS.png" alt="OliFinance SS">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">OliFinance</h3>
+                    <p class="project-description">
+                        Web application for personal finance management use, in which
+                        you can manage income, expenses and see their history.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">TypeORM</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('project1')"><i class="fas fa-search-plus"></i>
+                            See More
+                        </button>
+                        <a href="https://github.com/Oliver-IV/OliFinance-ts" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="2">
+                <div class="project-image">
+                    <img src="../imgs/MineTrackingSS.png" alt="MineTracking SS">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">MineTracking</h3>
+                    <p class="project-description">
+                        Real-time management system for vehicles with cargo, their routes
+                        and the traffic lights on these routes. For this software was
+                        developed a microservices system using also Messaging Brokers.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">ASP.NET</span>
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">TypeORM</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Api Gateway</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">RabbitMQ</span>
+                        <span class="tech-tag">Mosquitto</span>
+                        <span class="tech-tag">Messaging Brokers</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('project2')"><i class="fas fa-search-plus"></i>
+                            See More</button>
+                        <a href="https://github.com/Oliver-IV/MineTracking" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="3">
+                <div class="project-image">
+                    <img src="../imgs/LaboratoryMenuSS.png" alt="Laboratory SS">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Laboratory Web App</h3>
+                    <p class="project-description">
+                        Web application designed to be offered as a service to different
+                        laboratories, in which each laboratory can manage their clients,
+                        doctors and the results of the different tests performed in the laboratory.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">TypeORM</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">Multi-Tenancy</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('project3')"><i class="fas fa-search-plus"></i>
+                            See More</button>
+                        <a href="#" class="project-link"><i class="fas fa-lock"></i> Private Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="4">
+                <div class="project-image">
+                    <img src="../imgs/DominoGameSS.png" alt="Domino Game SS">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Domino Java Game</h3>
+                    <p class="project-description">
+                        Local Multiplayer Domino game developed with java, using TCP Sockets,
+                        and the most remarkable, implementing an architecture based on its own
+                        Broker, developing a Broker only with Java.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Messaging Brokers</span>
+                        <span class="tech-tag">TCP Sockets</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('project4')"><i class="fas fa-search-plus"></i>
+                            See More</button>
+                        <a href="https://github.com/AsielApodaca/domino-game-java" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="5">
+                <div class="project-image">
+                    <img src="../imgs/PasswordManagerSS.png" alt="Password Manager SS">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Password Manager</h3>
+                    <p class="project-description">
+                        Password Manager Web application, where you can register your accounts
+                        and passwords for different platforms, and save them encrypted in a database.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('project5')"><i class="fas fa-search-plus"></i>
+                            See More</button>
+                        <a href="https://github.com/Oliver-IV/Passsword_Manager" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="6">
+                <div class="project-image">
+                    <img src="../imgs/MoxxDesignsSS.png" alt="Moxx Designs SS">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Moxx Designs Web App</h3>
+                    <p class="project-description">
+                        Web application developed for a micro company that sells its service of
+                        designs for motorcycles and vehicles, offering the possibility to manage online sales.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Java Servlerts</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('project6')"><i class="fas fa-search-plus"></i>
+                            See More</button>
+                        <a href="https://github.com/AMOZINGAS/AplicacionWebMoxxDesigns" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-card">
+                    <h3 class="experience-title">Backend Developer</h3>
+                    <h4 class="experience-company">Devson</h4>
+                    <p class="experience-period">January 2025 - Present</p>
+                    <p class="experience-description">
+                        I started as a Backend Developer for Devson, developing APIs with the Node.js, NestJS,
+                        TypeORM and PostgreSQL Stack, now I lead the Backend Development team besides being a developer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-card">
+                    <h3 class="experience-title">Software Engineer Student</h3>
+                    <h4 class="experience-company">ITSON</h4>
+                    <p class="experience-period">August 2022 - May 2026</p>
+                    <p class="experience-description">
+                        4 years of software engineering career, where I have developed multiple projects mainly with
+                        java,
+                        and the latest with my own stack of backend web developer (Node.js with NestJS or ASP.NET),
+                        developing
+                        API's, microservices based systems and communication with gRPC or Messaging Brokers like
+                        RabbitMQ
+                        or Mosquitto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talleres -->
+    <section id="workshops">
+        <h2 class="section-title">My Workshops</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-project="1">
+                <div class="project-image">
+                    <img src="../imgs/NodeIntroSS.png" alt="Node Intro flyer">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Node.js Introduction</h3>
+                    <p class="project-description">
+                        Workshop with a duration of 3 hours, designed for ITSON software
+                        engineering students to attend. It is a brief introduction to the
+                        world of web development and APIS, with Node.js and Express.js.
+                    </p>
+                    <div class="project-tech">
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('workshop1')"><i class="fas fa-search-plus"></i>
+                            See More</button>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7250078140599824384/"
+                            target="_blank" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn Post</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="2">
+                <div class="project-image">
+                    <img src="../imgs/TypeOrmWorkshopSS.png" alt="TypeORM flyer">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Web APIs with Node, Express and TypeORM</h3>
+                    <p class="project-description">
+                        Workshop with a duration of 3 hours, designed for ITSON software engineering
+                        students to attend. It is an introduction to ORMs and the development of
+                        REST APIs with them, using Node.js with Express.js as a base.
+                    </p>
+                    <div class="project-tech">
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" onclick="openModal('workshop2')"><i class="fas fa-search-plus"></i>
+                            See More</button>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7309357106489446400/"
+                            target="_blank" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn Post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-bubbles">
+                    <div class="skill-bubble">JavaScript</div>
+                    <div class="skill-bubble">TypeScript</div>
+                    <div class="skill-bubble">CSS</div>
+                    <div class="skill-bubble">HTML</div>
+                    <div class="skill-bubble">Java</div>
+                    <div class="skill-bubble">Python</div>
+                    <div class="skill-bubble">C#</div>
+                    <div class="skill-bubble">Kotlin</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-bubbles">
+                    <div class="skill-bubble">Vue.js</div>
+                    <div class="skill-bubble">Figma</div>
+                    <div class="skill-bubble">Tailwind CSS</div>
+                    <div class="skill-bubble">Bootstrap</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-bubbles">
+                    <div class="skill-bubble">Node.js</div>
+                    <div class="skill-bubble">NestJS</div>
+                    <div class="skill-bubble">Express.js</div>
+                    <div class="skill-bubble">ASP.NET</div>
+                    <div class="skill-bubble">Spring Boot</div>
+                    <div class="skill-bubble">Java Servlets</div>
+                    <div class="skill-bubble">PostgreSQL</div>
+                    <div class="skill-bubble">MySQL</div>
+                    <div class="skill-bubble">MongoDB</div>
+                    <div class="skill-bubble">JPA</div>
+                    <div class="skill-bubble">TypeORM</div>
+                    <div class="skill-bubble">Socket.io</div>
+                    <div class="skill-bubble">REST API</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <div class="skill-bubbles">
+                    <div class="skill-bubble">Git</div>
+                    <div class="skill-bubble">GitHub</div>
+                    <div class="skill-bubble">JWT</div>
+                    <div class="skill-bubble">Microservices</div>
+                    <div class="skill-bubble">API Gateway</div>
+                    <div class="skill-bubble">Docker</div>
+                    <div class="skill-bubble">gRPC</div>
+                    <div class="skill-bubble">RabbitMQ</div>
+                    <div class="skill-bubble">Mosquitto</div>
+                    <div class="skill-bubble">WebSockets</div>
+                    <div class="skill-bubble">Messaging Brokers</div>
+                    <div class="skill-bubble">(TCP | UDP) Sockets</div>
+                    <div class="skill-bubble">Multi-Tenancy</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>IDEs</h3>
+                <div class="skill-bubbles">
+                    <div class="skill-bubble">Visual Studio Code</div>
+                    <div class="skill-bubble">Apache NetBeans</div>
+                    <div class="skill-bubble">IntelliJ</div>
+                    <div class="skill-bubble">PyCharm</div>
+                    <div class="skill-bubble">Android Studio</div>
+                    <div class="skill-bubble">Visual Studio Community</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <p>Contact me! You can contact me through my email or through my social networks:</p>
+            <p>oliverinzunzav@gmail.com</p>
+            <div class="contact-links">
+
+                <a href="https://github.com/Oliver-IV" target="_blank" class="contact-link">
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    <span class="contact-text">GitHub</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/oliver-valle-279108266/" target="_blank" class="contact-link">
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    <span class="contact-text">LinkedIn</span>
+                </a>
+
+                <a href="https://x.com/elcompaoli" target="_blank" class="contact-link">
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
+                    <span class="contact-text">X</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="project1-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/OliFinanceSS.png" alt="OliFinance Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">OliFinance</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        OliFinance was my first personal project in which I used TypeScript with
+                        Node.js, the goal was to create a Web Application to manage my personal
+                        finances, or expenses in the best possible way, for this I contacted some
+                        friends who are students of the degree in Economics and Finance, they
+                        advised me and told me what they considered essential to be inside
+                        this application and I did it. I could register my day to day expenses,
+                        my income and I had access to a complete history of my expenses and
+                        income, where I could organize them either by dates or by categories.
+                        I was using it for a while but I could no longer afford the hosting.
+                    </p>
+                </div>
+                <div class="modal-details-grid">
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>JWT authentication system</li>
+                            <li>Expense and income tracking</li>
+                            <li>REST API with Express.js</li>
+                            <li>Data organization by date/category</li>
+                            <li>Responsive dashboard</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies:</h4>
+                        <div class="tech-tags-container">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">TypeORM</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="https://github.com/Oliver-IV/OliFinance-ts" target="_blank" class="modal-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project2-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/MineTrackingSS.png" alt="MineTracking Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">MineTracking</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        MineTracking is a project that I did as a team for my Distributed Systems
+                        course in my Software Engineering career. It was born from a mining company's
+                        need to streamline its processes and to be able to monitor the transportation
+                        of cargo and traffic-lights within a mine in real time. As this project is part of my
+                        Distributed
+                        Systems subject, together with my Enterprise Architectures subject, I developed
+                        a Distributed System with a Microservices Based Architecture. At my university
+                        we had only worked with Java, but I along with the other members of my team,
+                        had already worked outside the school with other languages besides Java, and
+                        with different frameworks, so we decided to use Vue.js for the front end,
+                        NestJS and ASP.NET to develop the different microservices and Messaging Brokers
+                        like RabbitMQ and Mosquitto to achieve communication between some specific
+                        microservices, and real-time data visualization. In addition to all this,
+                        we made an API Gateway to communicate the client with the different microservices
+                        using gRPC, this used an uthentication service that uses JWT, both developed by me and using
+                        NestJS.
+                    </p>
+                </div>
+                <div class="modal-details-grid">
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Microservices architecture</li>
+                            <li>gRPC communication</li>
+                            <li>JWT authentication service</li>
+                            <li>Docker to deploy services</li>
+                            <li>NestJS services</li>
+                            <li>ASP.NET services</li>
+                            <li>RabbitMQ and Mosquitto messaging brokers</li>
+                            <li>Vue.js front end</li>
+                            <li>Real-time data visualization using websockets</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies:</h4>
+                        <div class="tech-tags-container">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">TypeORM</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Api Gateway</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">RabbitMQ</span>
+                            <span class="tech-tag">Mosquitto</span>
+                            <span class="tech-tag">Messaging Brokers</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="https://github.com/Oliver-IV/MineTracking" target="_blank" class="modal-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project3-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/LaboratoryMenuSS.png" alt="Laboratory Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">Laboratory Web App</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        The Laboratory Web Application is a software or service designed to be
+                        offered to different laboratories, for this it was decided that a multi-tenant
+                        architecture would be implemented, so that the clients would share the same API,
+                        but different databases. For this project I was on the backend side implementing
+                        different endpoints in the API for front end developers to consume it. This
+                        product was developed for different labs that want to manage their clients, doctors,
+                        their tests, results and a history of these.
+                    </p>
+                </div>
+                <div class="modal-details-grid">
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>REST API with NestJS</li>
+                            <li>Multi-Tenancy Architecture</li>
+                            <li>Software as a Service</li>
+                            <li>Managing clients/doctors data</li>
+                            <li>Tests/Results register and history of these</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies:</h4>
+                        <div class="tech-tags-container">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">TypeORM</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">Multi-Tenancy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="#" target="_blank" class="modal-link">
+                        <i class="fas fa-lock"></i> Private Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project4-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/DominoGameSS.png" alt="Domino Game Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">Domino Java Game</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        The Domino game in Java was a school project for my Software Architecture course.
+                        The purpose of the project was to make a Domino game that could be played in
+                        local multiplayer mode, using TCP Sockets for players that are connected to the
+                        same network. The interesting thing about this project was that we had to implement
+                        our own Software Architecture in Java, for which I and my team had to implement the
+                        Broker Architecture, with which we used TCP Sockets to achieve that 2 or more users
+                        connected at the same time to the Broker, could send information to each other and
+                        play the Domino game in real time.
+                    </p>
+                </div>
+                <div class="modal-details-grid">
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Broker Architecture Java implementation</li>
+                            <li>Real-time data visualization</li>
+                            <li>Local multiplayer mode</li>
+                            <li>Complete domino game implementation</li>
+                            <li>MVC implementation for the front end</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies:</h4>
+                        <div class="tech-tags-container">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Messaging Brokers</span>
+                            <span class="tech-tag">TCP Sockets</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="https://github.com/AsielApodaca/domino-game-java" target="_blank" class="modal-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project5-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/PasswordManagerSS.png" alt="Password Manager Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">Password Manager</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        The Password Manager was my first project with Node.js after learning the basics
+                        and combining it with what I learned about back end in my school. I started
+                        learning web with a course in Udemy and I applied all my knowledge for the first
+                        time in this project. It consists of a simple vanilla front end that consumes an
+                        API that I developed with Node.js and Express.js, using MongoDB as a database and
+                        encrypting all the important data, such as passwords or users that are stored in
+                        this password manager. The idea came from the fact that in my computer security
+                        class I was told that using the google password manager was not as secure as we
+                        thought, so they recommended us to download a password manager, but something in
+                        me distrusted them, so I thought.... Why don't I make my own password manager?
+                    </p>
+                </div>
+                <div class="modal-details-grid">
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>JWT authentication system</li>
+                            <li>Secure password storage</li>
+                            <li>REST API with Express.js</li>
+                            <li>Data encryption</li>
+                            <li>Responsive dashboard</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies:</h4>
+                        <div class="tech-tags-container">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="https://github.com/Oliver-IV/Passsword_Manager" target="_blank" class="modal-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project6-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/MoxxDesignsSS.png" alt="Moxx Designs Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">Moxx Designs Web Application</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        The Moxx Designs Web Application was developed for my Web Applications class.
+                        Since we were limited to using Java with Servlets, this is how the web application
+                        was developed. The purpose of the web application was to help the business of a
+                        client, which in this case was the father of one of my teammates, with his micro
+                        company that offers its services to apply designs to motorcycles or vehicles, so
+                        with our web application, customers can both learn more about the company, and
+                        make quotes for different designs offered by the company Moxx Designs.
+                    </p>
+                </div>
+                <div class="modal-details-grid">
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>JWT authentication system</li>
+                            <li>Making quotes for different designs</li>
+                            <li>REST API with Java Servlets</li>
+                            <li>Company information web</li>
+                            <li>Responsive dashboard</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies:</h4>
+                        <div class="tech-tags-container">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Java Servlerts</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="https://github.com/AMOZINGAS/AplicacionWebMoxxDesigns" target="_blank" class="modal-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="workshop1-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/NodeIntroSS.png" alt="Node flyer Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">Node.js Introduction</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        I had always wanted the opportunity to share my passion for web development
+                        with other students in my program, since I know that the way web development
+                        is taught at my university (ITSON) is somewhat outdated. Then, I got the
+                        chance to give a workshop during the 12th edition of Software Week at my
+                        university, and I decided to teach an introductory workshop on web development
+                        using Node.js and Express.js. The workshop lasted 3 hours and focused on
+                        teaching students how to develop an API and connect a frontend to this API
+                        in order to register data in a MySQL database and display the results on
+                        the user's screen. If you want to see more about this workshop, you can visit
+                        my LinkedIn post.
+                    </p>
+                </div>
+                <div class="modal-links">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7250078140599824384/" target="_blank"
+                        class="modal-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn Post
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="workshop2-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container">
+                    <img src="../imgs/TypeOrmWorkshopSS.png" alt="TypeORM Flyer Screenshot" class="modal-image">
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title">Web APIs with Node, Express and TypeORM</h3>
+                <div class="modal-description-container">
+                    <p class="modal-description">
+                        Once again, I had the opportunity to give a workshop to students from my
+                        Software Engineering program. This time, as a member of the student society
+                        of my program, I was able to organize it on my own and managed to sell several
+                        tickets for the workshop, with the proceeds going to the student society. I
+                        decided to focus more on the backend side, which is what I enjoy the most,
+                        and gave a workshop on API development using Node.js, Express.js, and an
+                        ORM—specifically TypeORM—to register data in a database. Unlike my previous
+                        workshop, this time I taught them how to map entities and create their own
+                        service classes to handle CRUD operations with the database. If you want to see
+                        more about this workshop, you can visit my LinkedIn post.
+                    </p>
+                </div>
+                <div class="modal-details-grid">
+                </div>
+                <div class="modal-links">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7309357106489446400/" target="_blank" class="modal-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn Post
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2025 Oliver Inzunza Valle. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
