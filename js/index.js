@@ -1,18 +1,26 @@
 // Cursor personalizado
-const cursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
 
-document.addEventListener('mousedown', () => {
-    cursor.style.transform = 'scale(0.8)';
-});
+if (!isTouchDevice) {
+    // Solo inicializar el cursor personalizado si NO es un dispositivo táctil
+    const cursor = document.querySelector('.cursor');
 
-document.addEventListener('mouseup', () => {
-    cursor.style.transform = 'scale(1)';
-});
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    document.addEventListener('mousedown', () => {
+        cursor.style.transform = 'scale(0.8)';
+    });
+
+    document.addEventListener('mouseup', () => {
+        cursor.style.transform = 'scale(1)';
+    });
+}
+
+
 
 // Navegación smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -193,7 +201,7 @@ function closeModal(projectId) {
 
 // Cerrar modal al hacer clic en la X
 document.querySelectorAll('.modal-close').forEach(closeBtn => {
-    closeBtn.addEventListener('click', function() {
+    closeBtn.addEventListener('click', function () {
         const modal = this.closest('.modal');
         const projectId = modal.id.replace('-modal', '');
         closeModal(projectId);
@@ -202,7 +210,7 @@ document.querySelectorAll('.modal-close').forEach(closeBtn => {
 
 // Cerrar modal al hacer clic fuera del contenido
 document.querySelectorAll('.modal').forEach(modal => {
-    modal.addEventListener('click', function(e) {
+    modal.addEventListener('click', function (e) {
         if (e.target === this) {
             const projectId = this.id.replace('-modal', '');
             closeModal(projectId);
@@ -211,7 +219,7 @@ document.querySelectorAll('.modal').forEach(modal => {
 });
 
 // Cerrar modal con tecla ESC
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         document.querySelectorAll('.modal.active').forEach(modal => {
             const projectId = modal.id.replace('-modal', '');
