@@ -1,26 +1,3 @@
-// Cursor personalizado
-
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
-
-if (!isTouchDevice) {
-    // Solo inicializar el cursor personalizado si NO es un dispositivo táctil
-    const cursor = document.querySelector('.cursor');
-
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
-
-    document.addEventListener('mousedown', () => {
-        cursor.style.transform = 'scale(0.8)';
-    });
-
-    document.addEventListener('mouseup', () => {
-        cursor.style.transform = 'scale(1)';
-    });
-}
-
-
 
 // Navegación smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
